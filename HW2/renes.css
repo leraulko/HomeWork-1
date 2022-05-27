@@ -1,0 +1,28 @@
+body{
+    margin-right: 300px;
+    margin-left: 200px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+header{
+    font-family: 'Tiro Kannada', serif;
+}
+
+p{
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+}
+
+img{
+    width: 400px;
+}
+
+figcaption{
+    color: rgb(146, 146, 146);
+    font-size: small;
+    padding-left: 10%;
+}
