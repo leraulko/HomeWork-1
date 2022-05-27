@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(208, 222, 249);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: smaller;
+}
+h1 {
+    text-align: center;
+}
+
+div {
+    margin-left: 5%;
+}
