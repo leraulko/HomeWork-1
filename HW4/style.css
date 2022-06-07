@@ -1,0 +1,488 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 1480px;
+}
+
+a{
+    cursor: pointer;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+    background: #ED4C5C;
+}
+
+.header-text{
+    position: absolute;
+    height: 267px;
+    width: 31.3%;
+    left: 12%;
+    top: 24.4%;
+}
+
+.caption{
+    position: absolute;
+    width: 100%;
+    height: 107px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+
+.header-paragraph{
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: justify;
+    top: 49%;
+}
+
+.download-links{
+    position: absolute;
+    height: 32px;
+    width: 30.11%;
+    top: 89.5%;
+}
+
+.playmarket-download{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+}
+.playmarket-download:hover{
+    opacity: 50%;
+}
+
+.appstore-download{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 55px;
+    top: 0px;
+}
+.appstore-download:hover{
+    opacity: 50%;
+}
+
+.windows-download{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 110px;
+    top: 4px;
+}
+.windows-download:hover{
+    opacity: 50%;
+}
+
+.header-iamge{
+    position: absolute;
+    height: 311px;
+    width: 37%;
+    top: 18.8%;
+    left: 48%;
+}
+
+.main{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    left: 0px;
+    top: 500px;
+    background-color: #FFFFFF;
+}
+
+.contacts{
+    position: absolute;
+    width: 31.3%;
+    height: 160px;
+    left: 12%;
+    top: 23.4%;
+}
+
+.main-title{
+    position: absolute;
+    width: 100%;
+    height: 107px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+}
+
+.questions{
+    position: absolute;
+    width: 97.5%;
+    height: 64px;
+    top: 60%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #000000;
+}
+
+.container{
+    position: absolute;
+    width: 37.5%;
+    height: 305px;
+    left: 51%;
+    top: 23.4%;
+}
+
+.names{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+}
+
+input[name=first-name] {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    border-radius: 6px;
+    border: 1px solid #333333;
+    position: absolute;
+    width: 47.22%;
+    height: 60px;
+    padding: 21px 0px 20px 31px;
+}
+
+input[name=last-name] {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    border: 1px solid #333333;
+    border-radius: 6px;
+    position: absolute;
+    width: 47.22%;
+    height: 60px;
+    left: 52.77%;
+    padding: 21px 0px 20px 31px;
+}
+
+.fill-in-main{
+    position: absolute;
+    width: 100%;
+    height: 144px;
+    top: 27.5%;
+}
+
+input[name=phone-number] {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    padding: 21px 0px 20px 31px;
+}
+
+select[name=select-service] {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 84px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    padding: 21px 0px 20px 31px;
+    -webkit-appearance: none;
+    background-image: url(./images/ChevronDown.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 14px;
+    background-position-x: 97%;
+}
+
+.submit{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0%;
+}
+
+.submit > button{
+    position: absolute;
+    width: 29.63%;
+    height: 50px;
+    background: #ED4C5C;
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.submit > button:hover {
+    opacity: 80%;
+}
+
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 435px;
+    left: 0px;
+    top: 1045px;
+    background: #FAFAFA;
+}
+
+.inside-footer{
+    position: absolute;
+    width: 88%;
+    height: 164px;
+    top: 85px;
+    left: 12%;
+}
+
+.address{
+    position: absolute;
+    width: 18%;
+    height: 164px;
+}
+
+.address > h5 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #101010;
+    position: absolute;
+    width: 8.5%;
+    height: 22px;
+    left: 1.93%;
+}
+
+.address > p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #101010;
+    position: absolute;
+    width: 100%;
+    left: 2%;
+    top: 55px;
+}
+
+.services{
+    position: absolute;
+    width: 17.64%;
+    height: 164px;
+    left: 22.68%;
+}
+
+.services > h3{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+    position:absolute;
+    width: 26.38%;
+    height: 22px;
+}
+
+.services > ul {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 114px;
+    top: 30.49%;
+    
+}
+li > a{
+    text-decoration: none;  
+    color:#000000; 
+}
+li >a:visited{
+    color: #000000;
+}
+li >a:hover{
+    color: #ED4C5C;
+}
+
+
+.get-in-touch{
+    position: absolute;
+    width: 10%;
+    height: 128px;
+    left: 43%;
+}
+
+.get-in-touch > h3{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+    position: absolute;
+    width: 100%;
+    height: 22px;
+}
+
+.get-in-touch > p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #101010;
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    top: 43%;
+}
+
+#phone {
+    position: absolute;
+    width: 78.7%;
+    height: 14px;
+    top: 62.5%;
+}
+#phone > a{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #121212;
+    position: absolute;
+    text-decoration: none;
+    cursor: pointer;
+}
+#phone > a:hover{
+    color:#ED4C5C;
+}
+
+
+.socials{
+    position: absolute;
+    width: 54.1%;
+    height: 14px;
+    top: 89%;
+}
+
+.fb-link{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+}
+
+.in-link{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 26px;
+}
+
+.twi-link{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 52px;
+}
+
+span > a:hover{
+    opacity: 50%;
+}
+
+.payments{
+    position: absolute;
+    width: 15.27%;
+    height: 86px;
+    left: 65%;
+}
+
+.payments >h3{
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+}
+
+.payments >img{
+    position: absolute;
+    width: 216px;
+    height: 31px;
+    top: 55px;
+    left: 4px;
+}
+
+.copyright{
+    position: absolute;
+    width: 89%;
+    height: 14px;
+    top: 335px;
+    left: 11%;
+}
+
+.copyright >p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #101010;    
+    position: absolute;
+    width: 100%;
+    height: 14px;
+}
