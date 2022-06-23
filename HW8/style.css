@@ -40,6 +40,7 @@ button{
     border: none;
     cursor: pointer;
     margin: 0 46px 0 46px;
+    transition: all 0.5s;
 }
 
 button:hover{
