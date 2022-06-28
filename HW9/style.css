@@ -423,6 +423,9 @@ a:hover{opacity: 60%;}
 .svgg{
     fill: #00ADEE;
 }
+.svggg{
+    fill: white;
+}
 
 
 @media (max-width: 720px) {
