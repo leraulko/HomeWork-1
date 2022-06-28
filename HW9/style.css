@@ -135,11 +135,8 @@ a:hover{opacity: 60%;}
     max-width: 1440px;
     height: 716px;
     display: flex;
-}
-
-.get-started >img{
-    position: absolute;
-    z-index: 0;
+    background-image: url(./assets/interface.png);
+    background-repeat: no-repeat;
 }
 
 .interface{
@@ -219,7 +216,6 @@ a:hover{opacity: 60%;}
     display: flex;
     flex-direction: column;
     gap: 10px;
-    list-style: circle;
 }
 
 .svg{
@@ -430,6 +426,180 @@ a:hover{opacity: 60%;}
     fill: white;
 }
 
+@media (max-width:1280px) {
+    .about-app{
+        max-width: 1280px;
+    }
+    
+    .about-right{
+        margin-left: -1px;
+    }
+    
+    .get-started{
+        max-width: 1280px;
+        background-position: center;
+    }
+    
+    .features{
+        max-width: 1280px;
+    }
+    
+    .features-block{
+        justify-content: flex-start;
+    }
+    
+    .features-block > h1{
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    
+    .features-list{
+        height: 600px;
+        width: 80%;
+        gap: 30px 60px;
+    }
+    
+    .user-reviews{
+        max-width: 1280px;
+    }
+
+    .featured-in {
+        max-width: 1280px;
+    }
+
+    .last-page{
+        max-width: 1280px;
+        padding: 60px 7% 18px 60%;
+    }
+    
+    .last-page-right{
+        height: 360px;
+    }
+
+}
+
+@media (min-width:720px) and (max-width: 1024px){
+    .header{
+        background-image: none;
+        max-width: 1024px;
+        padding: 5% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }    
+
+    .header-text{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .navigation{
+        width: auto;
+    }
+
+    .about-app{
+        max-width: 1024px;
+    }
+
+    .about-right > p, h1 {width: 90%;}
+
+    .image2{
+        transform: scale(0.8);
+        margin-top: 298px;
+        margin-left: 53px;
+        padding: 0;
+    }
+    
+    .image1{
+        transform: scale(0.8);
+        margin-top: 125px;
+        margin-left: -65px;
+        padding: 0;
+    }
+
+    .featured-in{
+        justify-content: flex-start;
+        text-align: center;
+        max-width: 1024px;
+        height: 409px;
+        padding: 47px 20px 0 20px;
+    }
+    
+    .featured-in-list{
+        width: 320px;
+        display: grid;
+        margin: 43px auto;
+        gap: 30px 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "one one two"
+        "three four five"
+        "six six six";
+        align-items: center;
+    }
+
+    .point1{grid-area: one;}
+    .point2{grid-area: two; margin-left: -25px;}
+    .point3{grid-area: three;}
+    .point4{grid-area: four;}
+    .point5{grid-area: five; justify-self: center;}
+    .point6{grid-area: six; justify-self: center;}
+
+    .last-page{
+        max-width: 1024px;
+        height: 400px;
+        background-image: url(./assets/Frame\ 2.png);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: -7%;
+        background-size: 450px 400px;
+        padding: 20px 1% 18px 50%;
+    }
+    
+    .features{
+        max-width: 1024px;
+        height: 1070px;
+    }
+    
+    .features-block >h1{
+        text-align: center;
+    }
+
+    .features-list{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 30px 90px;
+    }
+
+    .reviews >h1{
+        text-align: center;
+    }
+
+    .reviews >img{
+        width: 143px;
+    }
+
+    .footer{
+        max-width: 1024px;
+    }
+
+    .foot-links{
+        width: 55%;
+    }
+
+    .foot-social{
+        width: 15%;
+    }
+}
 
 @media (min-width:360px) and (max-width: 720px) {
     .header{
@@ -533,11 +703,6 @@ a:hover{opacity: 60%;}
     }
     .get-started >img{
         display: none;
-        /* order: 2;
-        transform: scale(0.56);
-        margin-top: 260px;
-        margin-right: 340px;
-        overflow: hidden; */
     }
     
     .interface{
