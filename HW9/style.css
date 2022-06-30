@@ -601,7 +601,7 @@ a:hover{opacity: 60%;}
     }
 }
 
-@media (min-width:360px) and (max-width: 720px) {
+@media (max-width: 720px) {
     .header{
         background-image: none;
         max-width: 720px;
