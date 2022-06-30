@@ -65,19 +65,19 @@ body{
     background-color: black;
 }
 
-.button:focus .sword1{
+.button:hover .sword1{
     background-color: #f2f2a6;
     filter: drop-shadow(5px 5px 5px rgb(255, 255, 93));
     transform: translateX(100px);
 }
 
-.button:focus .sword2{
+.button:hover .sword2{
     background-color: #faa6a6;
     filter: drop-shadow(5px 5px 5px rgb(236, 55, 55));
     transform: rotate(45deg);
 }
 
-.button:focus .sword3{
+.button:hover .sword3{
     background-color: #c2f9b6;
     filter: drop-shadow(5px 5px 5px rgb(148, 247, 61));
     transform: translateY(-32px) rotate(-45deg);
