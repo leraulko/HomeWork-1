@@ -149,6 +149,6 @@ button{
         width: 33px;
     }
     .icons, .logo{
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 }
