@@ -1,0 +1,561 @@
+@import "fonts.scss" , "color.scss";
+
+*{
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    &.head{
+    background: url(../assets/designer_1.png) no-repeat right;
+    }
+}
+
+.header{
+    height: 1110px;
+
+    &__menu{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li{
+        
+                a{
+                font-family: $roboto;
+                font-weight: $fw400;
+                font-size: $regularSize;
+                color: $headerText;
+                text-decoration: none;
+                line-height: 24px;
+
+                    &:hover{
+                        color: $darkText;}    
+                }
+            }
+        }
+
+        button{
+            height: 26px;
+            width: 160px;
+            margin-right: 12px;
+            background-color: $darkButton;
+            color: $whiteText;
+            font-family: $roboto;
+            font-size: $buttonSmallText;
+            font-weight: $fw500;
+            border-radius: 2px;
+            border: none;
+
+            &:hover{
+                opacity: 80%;
+            }
+
+            &:active{
+                background-color: transparent;
+                color: $darkText;
+            }
+        }
+    }
+
+    &__main{
+        margin-top: 261px;
+        width: 540 * 100% / 1296;
+
+        h1{
+            font-family: $roboto;
+            font-weight: $fw500;
+            font-size: $mainTitle;
+            color: $darkText;
+            line-height: 66px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-family: $roboto;
+            font-weight: $fw400;
+            font-size: $mainText;
+            color: $lightText;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .button{
+            width: 189 * 100% / 540;
+            height: 36px;
+            margin-right: 30px;
+            margin-top: 49px;
+            background-color: $darkButton;
+            color: $whiteText;
+            font-family: $roboto;
+            font-size: $blocksText;
+            font-weight: $fw500;
+            border-radius: 2px;
+            border: none;
+
+            &:hover{
+                opacity: 80%;
+            }
+
+            &:active{
+                background-color: transparent;
+                color: $darkText;
+            }
+        }
+
+        .button-light{
+            background-color: transparent;
+            color: $darkText;
+            border: 2px solid $darkText;
+            margin: 0;
+
+            &:hover{
+                background-color: lighten($darkButton, 75);
+            }
+
+            &:active{
+                background-color: $darkButton ;
+                color: $whiteText ;
+            }
+        }
+    }
+
+    nav{
+        .nav-link{
+            color: $headerText;
+        }
+
+        .nav-item{
+            .btn{
+                width: 30%;
+                background-color: $darkButton;
+            }
+        }
+    }
+}
+
+.main{
+    height: auto;
+
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 230px;
+
+        &.first{margin-top: 110px;}
+
+        &__text{
+            width: 540 * 100% / 1296;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .text-heading{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h1{
+                    font-family: $roboto;
+                    font-weight: $fw500;
+                    font-size: $blocksTitle;
+                    line-height: 48px;
+                    color: $darkText;
+                }
+
+                p{
+                    font-family: $roboto;
+                    font-weight: $fw400;
+                    font-size: $blocksText;
+                    line-height: 26px;
+                    color: $lightText;
+                }
+            }
+
+            .text-icons{
+                display: flex;
+                justify-content: space-between;
+        
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+
+                    h5{
+                        font-family: $roboto;
+                        font-weight: $fw500;
+                        font-size: $blocksText;
+                        line-height: 26px;
+                        color: $darkText;
+                    }
+
+                    p{
+                        width: 90%;
+                        font-family: $roboto;
+                        font-weight: $fw400;
+                        font-size: $buttonSmallText;
+                        line-height: 18px;
+                        color: $smallIconText;
+                    }
+                }
+            }
+        }
+
+        &.news{
+            justify-content: space-around;
+
+            .about__text{
+                width: 445 * 100% / 1296;
+                height: 230px;
+                display: inherit;
+                
+            }
+        }
+
+        &.last{
+            margin-bottom: 48px;
+
+            .about__text{
+                height: auto;}
+
+            .purchase-btn{
+                width: 150px;
+                height: 32px;
+                margin-top: 20px;
+                background-color: $darkButton;
+                color: $whiteText;
+                font-family: $roboto;
+                font-size: $regularSize;
+                font-weight: $fw500;
+                border-radius: 2px;
+                border: none;
+    
+                &:hover{
+                    opacity: 80%;
+                }
+    
+                &:active{
+                    background-color: transparent;
+                    color: $darkText;
+                }
+            }
+        }
+    }
+}
+
+.container-fluid{
+    &.bottom{
+        height: 804px;
+        background: url(../assets/Rectangle.png) no-repeat;
+        background-position-x: center;
+        background-size: cover;
+    }
+}
+
+.price{
+    width: 600*100% / 1600;
+    padding-top: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    &__text{
+        h1{
+            font-family: $roboto;
+            font-weight: $fw500;
+            font-size: $blocksTitle;
+            line-height: 48px;
+            color: $darkText;
+        }
+
+        p{
+            font-family: $roboto;
+            font-weight: $fw400;
+            font-size: $blocksText;
+            line-height: 26px;
+            color: $lightText;
+        }
+    }
+
+    &__amount{
+        h1{
+            font-family: $roboto;
+            font-weight: $fw500;
+            font-size: $mainTitle;
+            line-height: 66px;
+            letter-spacing: 1px;
+            color: $price;
+        }
+
+        p{
+            font-family: $roboto;
+            font-weight: $fw400;
+            font-size: $blocksText;
+            line-height: 26px;
+            color: $underPrice;
+        }
+    }
+
+    &__button{
+        p{
+            font-family: $roboto;
+            font-weight: $fw400;
+            font-size: $buttonSmallText;
+            line-height: 24px;
+            color: $smallIconText;
+        }
+
+        button{
+                width: 189px;
+                height: 32px;
+                background-color: $darkButton;
+                color: $whiteText;
+                font-family: $roboto;
+                font-size: $regularSize;
+                font-weight: $fw500;
+                border-radius: 2px;
+                border: none;
+    
+                &:hover{
+                    opacity: 80%;
+                }
+    
+                &:active{
+                    background-color: transparent;
+                    color: $darkText;
+                }
+        }
+    }
+}
+
+.container-fluid{
+    &.foot{
+        height: 216px;
+        background-color: #E7ECFF;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &__logo{
+        justify-content: space-between;
+        border-bottom: 1px solid #CDD1D4;;
+
+        p{
+            font-family: $roboto;
+            font-weight: $fw500;
+            font-size: $regularSize;
+            line-height: 24px;
+            color: $copyrights;
+        }
+
+        .logo{margin-bottom: 40px;}
+
+        button{
+            width: 109px;
+            height: 26px;
+            margin-right: 12px;
+            background-color: $darkButton;
+            color: $whiteText;
+            font-family: $roboto;
+            font-size: $buttonSmallText;
+            font-weight: $fw500;
+            border-radius: 2px;
+            border: none;
+
+            &:hover{
+                opacity: 80%;
+            }
+
+            &:active{
+                background-color: transparent;
+                color: $darkText;
+            }
+        }
+    }
+
+    &__nav{
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .menu{
+            li{
+                a{
+                    font-family: $roboto;
+                    font-weight: $fw400;
+                    font-size: $regularSize;
+                    line-height: 24px;
+                    color: $footerMenu;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: $darkText;
+                    }
+                }
+            }
+        }
+
+        .social{
+            li{
+                a{
+                    path{
+                        &:hover{
+                            fill: $darkButton;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1350px){
+    .container-fluid{
+        &.bottom{
+            background: url(../assets/Rectangle.png) no-repeat;
+            background-position-x: center;
+        }
+    }  
+}
+
+@media (max-width:992px){
+    .container-fluid {
+        &.head{
+            background: #f3f5ff;}
+    } 
+
+    .header{height: 600px;}
+    .header__main{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__text{
+            margin-top: 20px;
+            width: 90% !important;
+        }    
+        .text-icons{
+            div{
+                align-items: center;
+            }
+        }
+
+        &.last{
+            .purchase-btn{align-self: center;}
+        }
+    }
+
+    .price{
+        width: 90%;
+        padding-top: 240px;}
+}
+
+
+@media (max-width:767px) {
+    .header{height: 750px;}
+    .header__main{
+        margin-top: 50px;}
+    .header__menu{
+        justify-content: right;
+
+        .button , .menu-list  {
+            display: none !important;
+        } 
+    }
+
+    .about{
+        &__image{
+            transform: scale(0.7);
+        }
+    }
+
+    .menu , .social{justify-content: space-evenly !important;}
+
+    .price{
+        padding-top: 100px;
+    }
+    .container-fluid.bottom{height: 704px;}
+}
+
+@media (min-width: 768px){
+    .navbar-expand-md .navbar-nav {
+        display: none;
+    }
+}
+
+@media (max-width:623px) {
+    .header__main{
+        margin-top: 50px;
+
+        h1{
+            font-size: 2.125rem;
+            line-height: 46px;
+        }
+
+        p{
+            font-size: 1rem;
+            line-height: 24px;
+        }
+
+        .button{
+            width: 40%;
+            padding: 0;
+            margin-right: 10px;
+            font-size: 0.75rem;
+        }
+    }
+
+    .first{margin-bottom: 100px !important;}
+}
+
+@media (max-width:576px){
+    .container-fluid.foot{align-items: unset;}
+    .footer{justify-content: space-around;}
+    .footer__logo{
+        justify-content: center;
+        text-align: center;
+
+        p{order: 2;}
+
+        .logo{ 
+            order: 0;
+            margin: 0;
+        }
+
+        button{margin: 20px; order: 1;}
+    }
+}
