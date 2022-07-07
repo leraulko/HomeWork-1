@@ -486,15 +486,19 @@
 
 
 @media (max-width:767px) {
-    .header{height: 750px;}
-    .header__main{
-        margin-top: 50px;}
-    .header__menu{
-        justify-content: right;
+    .header{height: 750px;
 
-        .button , .menu-list  {
-            display: none !important;
-        } 
+        &__main{
+            margin-top: 50px;
+        }
+
+        &__menu{
+            justify-content: right;
+    
+            .button , .menu-list  {
+                display: none !important;
+            } 
+        }
     }
 
     .about{
@@ -508,6 +512,7 @@
     .price{
         padding-top: 100px;
     }
+
     .container-fluid.bottom{height: 704px;}
 }
 
@@ -543,19 +548,24 @@
 }
 
 @media (max-width:576px){
-    .container-fluid.foot{align-items: unset;}
-    .footer{justify-content: space-around;}
-    .footer__logo{
-        justify-content: center;
-        text-align: center;
+    .container-fluid.foot{align-items: unset;
 
-        p{order: 2;}
+        .footer{
+            justify-content: space-around;
 
-        .logo{ 
-            order: 0;
-            margin: 0;
+            &__logo{
+                justify-content: center;
+                text-align: center;
+        
+                p{order: 2;}
+        
+                .logo{ 
+                    order: 0;
+                    margin: 0;
+                }
+        
+                button{margin: 20px; order: 1;}
+            }
         }
-
-        button{margin: 20px; order: 1;}
     }
 }
