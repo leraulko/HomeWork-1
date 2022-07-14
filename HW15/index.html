@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="preload" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://www.youtube.com">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
@@ -33,7 +33,7 @@
         </div>
         <div class="right-block">
             <picture> <source srcset="img/product1.webp" type="image/webp">
-                <img src="img/product.png" alt="" class="main-image"></picture>
+                <img src="img/product1.png" alt="" class="main-image"></picture>
             <div class="price">
                 <div class="old-price">6999 грн.</div>
                 <div class="new-price">3999 грн.</div>
@@ -282,7 +282,7 @@
 
     </div>
 </footer>
-<script src="lib/plugins.js"></script>
+<script src="lib/plugins.js" async></script>
 <script>
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
