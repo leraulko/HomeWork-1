@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="gold"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+          </path>
+        </svg>
+</div>
 <header>
     <div class="wrapper">
         <img src="img/logo.png" alt="Logo Avtoparktronik" class="logo">
@@ -110,7 +117,7 @@
         </h2>
         <div class="reason">
             <div class="square">
-                <img src="img/reason1.png" alt="" class="width60">
+               <div class="bg-reason1"></div>
             </div>
             <h4 class="h4">Быстрый и легкий монтаж</h4>
             <div class="reason-text">Зеркало с монитором крепится поверх штатного и не требует дополнительных установок.
@@ -118,7 +125,7 @@
         </div>
         <div class="reason">
             <div class="square">
-                <img src="img/reason2.png" alt="">
+                <div class="bg-reason2"></div>
             </div>
             <h4 class="h4">Стоимость</h4>
             <div class="reason-text">Цена видеопарктроника у дилера от 19990 грн.Наша цена всего 3990 грн.
@@ -126,7 +133,7 @@
         </div>
         <div class="reason">
             <div class="square">
-                <img src="img/reason3.png" alt="" class="width35">
+                <div class="bg-reason3"></div>
             </div>
             <h4 class="h4">Экономия</h4>
             <div class="reason-text">В случае наезда на препятствие при движении задним ходом, стоимость ремонта бампера
@@ -135,7 +142,7 @@
         </div>
         <div class="reason">
             <div class="square">
-                <img src="img/reason4.png" alt="">
+                <div class="bg-reason4"></div>
             </div>
             <h4 class="h4">Безопасность для пешеходов</h4>
             <div class="reason-text">при движении задним ходом (угол обзора нашей камеры 170 градусов)
@@ -263,13 +270,13 @@
         </ul>
         <p>Мы заботимся о своей репутации, клиенты для нас на первом месте!</p>
         <div class="advantages">
-            <div class="adv"><img src="img/adv1.png" alt="">
+            <div class="adv"> <div class="bg-adv1"></div>
                 <div class="adv-title yellow">Оплата при получении</div>
             </div>
-            <div class="adv"><img src="img/adv2.png" alt="">
+            <div class="adv"><div class="bg-adv2"></div>
                 <div class="adv-title yellow">365 дней гарантии</div>
             </div>
-            <div class="adv"><img src="img/adv3.png" alt="">
+            <div class="adv"><div class="bg-adv3"></div>
                 <div class="adv-title yellow">Возврат денег в течение 14 дней</div>
             </div>
         </div>
@@ -345,6 +352,15 @@ $(document).ready(function () {
         });
 			
 });
+</script>
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
 </script>
 </body>
 </html>
